@@ -36,14 +36,14 @@ Faltas = 0
 
 
 
-#Função de inicialização da urna, onde o administrador precisar selecionar sim antecipadamente para iniciar a votação
+#Função de inicialização da urna, onde o administrador precisar selecionar a seha 'sim' antecipadamente para iniciar a votação
 
-administrador = input('deseja começar a votação: ')
+administrador = getpass('Digite a senha de inicialização da urna: ')
 if administrador == 'sim':
         print('votação iniciada')
 else:
         while administrador != 'sim':
-                administrador = input('deseja começar a votação: ')
+                administrador = getpass('Digite a senha de inicialização da urna: ')
                 if administrador == 'sim':
                         print('votação iniciada')
 
